@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Veggie boost</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.css"
+      integrity="sha512-gA2Bvu0/hw4oj0Lp8ZHjK+o3S4BE5m8d/wNVy6ktKLhHKPpWLQwv9ixzuWirWOakoJqlBdePq2NhoCaUOQ5npQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <!-- ----header---- -->
+    <header class="header">
+      <div class="container header-container">
+        <a href="./index.html" class="header-logo">
+          <svg class="header-logo-icon" width="16" height="16">
+            <use href="./img/icons.svg#icon-logo"></use>
+          </svg>
+          Veggieboost</a
+        >
+
+        <button class="menu-btn" type="button" data-menu-open>
+          <svg class="menu-icon" width="24" height="24">
+            <use href="./img/icons.svg#icon-menu-mobile"></use>
+          </svg>
+        </button>
+      </div>
+
+      <!-- ----mob-menu---- -->
+      <div class="mob-menu is-hidden" data-menu>
+        <div class="mob-menu-header">
+          <a href="./index.html" class="header-logo">
+            <svg class="header-logo-icon" width="16" height="16">
+              <use href="./img/icons.svg#icon-logo"></use>
+            </svg>
+            Veggieboost</a
+          >
+
+          <button class="close-btn" type="button" data-menu-close>
+            <svg class="close-menu-icon" width="24" height="24">
+              <use href="./img/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <div class="mob-menu-main">
+            <ul class="mob-menu-list">
+              <li class="mob-menu-item">
+                <a href="" class="mob-menu-link">How It Works</a>
+              </li>
+              <li class="mob-menu-item">
+                <a href="" class="mob-menu-link">Vegetables</a>
+              </li>
+              <li class="mob-menu-item">
+                <a href="" class="mob-menu-link">Contacts</a>
+              </li>
+              <li class="mob-menu-item">
+                <a href="" class="mob-menu-link"
+                  ><svg class="mob-menu-basket-icon" width="20" height="20">
+                    <use href="./img/icons.svg#icon-shopping-cart"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ----main---- -->
+    <main>
+      <!-- ----hero---- -->
+      <section class="hero">
+        <div class="hero-container">
+          <ul class="review-list">
+            <li class="review-items">
+              <picture class="review-img">
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./img/review1-mob.jpg 1x, ./img/review1-mob-2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px) and (max-width: 1279px)"
+                  srcset="./img/review1-tab.jpg 1x, ./img/review1-tab-2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="./img/review1-pc.jpg 1x, ./img/review1-pc-2x.jpg 2x"
+                />
+                <img src="./img/review1-pc.jpg" alt="photo" />
+              </picture>
+            </li>
+            <li class="review-items">
+              <picture class="review-img">
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./img/review2-mob.jpg 1x, ./img/review2-mob-2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px) and (max-width: 1279px)"
+                  srcset="./img/review2-tab.jpg 1x, ./img/review2-tab-2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="./img/review2-pc.jpg 1x, ./img/review2-pc-2x.jpg 2x"
+                />
+                <img src="./img/review2-pc.jpg" alt="photo" />
+              </picture>
+            </li>
+            <li class="review-items">
+              <picture class="review-img">
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./img/review3-mob.jpg 1x, ./img/review3-mob-2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px) and (max-width: 1279px)"
+                  srcset="./img/review3-tab.jpg 1x, ./img/review3-tab-2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="./img/review3-pc.jpg 1x, ./img/review3-pc-2x.jpg 2x"
+                />
+                <img src="./img/review3-pc.jpg" alt="photo" />
+              </picture>
+            </li>
+            <li class="review-items"><span>2K</span>reviews</li>
+          </ul>
+
+          <div class="wrapper">
+            <div class="hero-dec-container">
+              <h1 class="hero-title">
+                Organic <span>vegetables</span> to your diet today!
+              </h1>
+              <p class="hero-text">
+                Our expertly curated vegetable baskets are made with the
+                freshest, highest quality vegetables available. Fresh Harvest
+                Box has got you covered. Fresh, high-quality vegetables in
+                expertly curated vegetable baskets delivered to you.
+              </p>
+              <button class="hero-btn" type="button" data-modal-open>
+                shop now
+              </button>
+            </div>
+
+            <div class="hero-img-container">
+              <div class="hero-img-background"></div>
+              <div class="hero-img-wrapper">
+                <picture class="hero-img">
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./img/hero-img-mob.png    1x,
+                      ./img/hero-img-mob-2x.png 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px) and (max-width: 1279px)"
+                    srcset="
+                      ./img/hero-img-tab.png    1x,
+                      ./img/hero-img-tab-2x.png 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 1280px)"
+                    srcset="
+                      ./img/hero-img-pc.png    1x,
+                      ./img/hero-img-pc-2x.png 2x
+                    "
+                  />
+                  <img src="./img/hero-img-pc.png" alt="Girl whith vegetable" />
+                </picture>
+              </div>
+            </div>
+          </div>
+
+          <div class="hashtag-container">
+            <ul class="hashtag-list">
+              <li>
+                <button class="hashtag-item" type="button">#organic</button>
+              </li>
+              <li>
+                <button class="hashtag-item" type="button">#products</button>
+              </li>
+            </ul>
+            <ul class="hashtag-list">
+              <li>
+                <button class="hashtag-item" type="button">#basket</button>
+              </li>
+              <li>
+                <button class="hashtag-item" type="button">#vegetables</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ----footer---- -->
+    <footer></footer>
+    <script src="./js/menu.js"></script>
+  </body>
+</html>
